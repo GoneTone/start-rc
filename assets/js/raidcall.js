@@ -13,3 +13,11 @@ function goChannel(sid) {
 		alert("您的作業系統無法使用RC語音，請使用支援的作業系統 (Windows 或 Android)。");
 	}
 }
+
+/**
+ * 載入網頁，進入語音群
+ * @param {Number} sid 群ID
+ */
+function Start(sid) {
+	location.href = 'rctw://enterServer/?sid=' + sid;
+}
